@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Perspective Projection</title>
+  </head>
+
+  <body>
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #c3c3c3;">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+    <script src="HelloCube.js"></script>
+  </body>
+
+  <script>
+      var c=document.getElementById("myCanvas");
+      var ctx=c.getContext("2d");
+
+      function drawTriAngle(point1,point2,point3){
+          ctx.fillStyle="#FF0000";
+          ctx.beginPath();
+          ctx.moveTo(20,20);
+          ctx.lineTo(20,100);
+          ctx.lineTo(70,100);
+          ctx.closePath();
+          ctx.fill();
+      }
+
+  </script>
+</html>
