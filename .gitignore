@@ -34,8 +34,6 @@ dist/**/*.js
 /demo/images/**
 # 发布不提交
 public.sh
-# 不提交模型
-uinv_patches/models/**
 
 public
 
